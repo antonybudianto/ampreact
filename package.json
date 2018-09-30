@@ -5,7 +5,10 @@
   "description": "React AMP starter",
   "scripts": {
     "dev": "bnr dev",
-    "build": "bnr build",
+    "build": "bnr build:prod",
+    "build:dev": "bnr build:dev",
+    "build:prod": "bnr build:prod",
+    "build:staging": "bnr build:staging",
     "start": "bnr start",
     "lint": "eslint -c ./package.json ./pages server.js"
   },
@@ -19,13 +22,32 @@
     "dev": {
       "command": "node server.js",
       "env": {
-        "NODE_ENV": "development"
+        "NODE_ENV": "development",
+        "APP_ENV": "development"
       }
     },
-    "build": {
+    "build:basic": {
       "command": "next build",
       "env": {
         "NODE_ENV": "production"
+      }
+    },
+    "build:dev": {
+      "command": "bnr build:basic",
+      "env": {
+        "APP_ENV": "development"
+      }
+    },
+    "build:staging": {
+      "command": "bnr build:basic",
+      "env": {
+        "APP_ENV": "staging"
+      }
+    },
+    "build:prod": {
+      "command": "bnr build:basic",
+      "env": {
+        "APP_ENV": "production"
       }
     }
   },
