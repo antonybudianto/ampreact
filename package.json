@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "name": "ampreact",
+  "version": "2.1.0",
+  "description": "⚡⚛ AMP HTML + React — The most trendy website boilerplate possible.",
+  "main": "",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint -c ./package.json ./pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfrankland/ampreact.git"
+  },
+  "keywords": [
+    "amp",
+    "react",
+    "trendy"
+  ],
+  "author": "Dylan Frankland <dylan@frankland.io> (http://dylan.frankland.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfrankland/ampreact/issues"
+  },
+  "homepage": "https://github.com/dfrankland/ampreact#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-styled-components": "^1.8.0",
+    "@babel/plugin-proposal-function-bind": "7.0.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "dependencies": {
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-amphtml": "^3.0.1",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.9"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "react/jsx-filename-extension": "off",
+      "jsx-a11y/label-has-for": "off",
+      "arrow-body-style": "off",
+      "comma-dangle": "off"
+    }
+  }
+}
