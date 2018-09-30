@@ -26,26 +26,20 @@
         "APP_ENV": "development"
       }
     },
-    "build:basic": {
-      "command": "next build",
-      "env": {
-        "NODE_ENV": "production"
-      }
-    },
     "build:dev": {
-      "command": "bnr build:basic",
+      "command": "next build",
       "env": {
         "APP_ENV": "development"
       }
     },
     "build:staging": {
-      "command": "bnr build:basic",
+      "command": "next build",
       "env": {
         "APP_ENV": "staging"
       }
     },
     "build:prod": {
-      "command": "bnr build:basic",
+      "command": "next build",
       "env": {
         "APP_ENV": "production"
       }
